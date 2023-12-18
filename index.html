@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK47-欢迎界面</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 200vh;
+            overflow-x: hidden;
+        }
+
+        .background {
+            background-image: url("./img/welcome.jpg");
+            background-size: cover;
+            background-position: 50% 50%;
+            height: 200vh;
+            font: 900 30rem '';
+            line-height: 100vh;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .background::before {
+            content: '';
+            background-size: cover;
+            background-image: url("./img/welcome.jpg");
+            background-position: 50% 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -99;
+        }
+
+        h1 {
+            font-size: 5em;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            letter-spacing: 10px;
+            color: #fff;
+
+        }
+
+        h2 {
+            position: absolute;
+            letter-spacing: 2px;
+            top: 80vh;
+            width: 60%;
+            color: #fff;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 30px;
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+
+        .button {
+            position: absolute;
+            height: auto;
+            /* 绝对定位相对于父元素 */
+            top: 80vh;
+            /* 距离底部10px */
+            left: 45%;
+            /* 距离右边10px */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>AK47,守护还是毁灭？</h1>
+    <div class="background">
+        <span>AK47</span>
+        <a href="final_page2.html" class="button"><img src="./img/zhunxing.png" ></a>
+    </div>
+    
+    <h2>
+        论起当代最著名的突击步枪是什么？M16和AK这两个系列必定是位列于前的。AK是俄文Автомат Калашников（卡拉什尼科夫自动枪）的缩写，也常常被称为“卡拉什尼科夫突击步枪”，或昵称为“卡拉什”（Kalash）。
+        50多年来，卡拉什尼科夫亲手设计或亲自领导研制的轻武器已经成为一个完整的“枪族”。型号中凡有“K”字母的就是以他的姓氏的缩写命名的。卡拉什尼科夫的代表作是AK系列步枪
+        、轻机枪RPK、通用机枪PK系列等等。迄今为止AK枪族是世界上最完整，作战效能最好的枪族之一。冷战时期曾经有这么一句谚语来形容AK，“美国出口的是可口可乐，日本出口的是索尼，而苏联出口的是卡拉什尼科夫自动步枪”
+    </h2>
+
+
+
+
+
+    <script>
+        const background = document.querySelector(".background")
+
+        document.addEventListener('scroll', () => {
+            const scrollY = window.scrollY
+
+            if (scrollY !== 0) {
+                background.style.backgroundPosition = `calc(50% + ${scrollY}px) calc(50% + ${scrollY}px)`
+            } else {
+                background.style.backgroundPosition = ''
+            }
+        })
+    </script>
+</body>
+
+</html>
