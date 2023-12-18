@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* 防止水平滚动 */
+}
+.scroll-container {
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.page {
+    width: 100%;
+    height: calc(100vh - 80px);
+    overflow-y: auto; /* 如果内容超过视口高度则允许垂直滚动 */
+    position: relative; /* 用于内部元素定位 */
+    scroll-snap-align: start; /* 如果你想要每次滚动都对齐到页的顶部 */
+}
+
+/* 可以添加一些过渡效果来平滑滚动 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 根据需要为每个页面添加特定的背景颜色或背景图片 */
+
+/* 标题和段落的样式可以根据需要定制 */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+p {
+    text-align: center;
+    font-size: 1em;
+    padding: 0 20px;
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK47主页</title>
+    <link rel="stylesheet" href="./css/guns.css">
+
+    <!--3D-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="unique-a"><img src="./img/littleAK.png" alt="logo"></a>
+        <ul>
+            <li> <a href="3DAK.html" class="sample-a">主页</a></li>
+            <li><a href="story.html" class="sample-a">故事</a></li>
+            <li><a href="data.html" class="sample-a">数据</a></li>
+            <li><a href="#" class="sample-a">发展史</a></li>
+            <li><a href="vedio.html" class="sample-a">视频</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="sidebar">
+            <!-- 导航菜单 -->
+            <ul class="nav-menu">
+                <li><a href="3DAK.html">AK47</a></li>
+                <li><a href="3DAK74.html">AK74</a></li>
+                <li><a href="3DAK12.html">AK12</a></li>
+                <li><a href="3DRPK.html">RPK</a></li>
+                <li><a href="3DSVD.html">SVD</a></li>
+            </ul>
+        </div>
+        <div id="guns_3D">
+            <model-viewer src="model/SVD/scene.gltf" alt="SVD" auto-rotate camera-controls ar>
+            </model-viewer>
+        </div>
+        <div id="guns_content">
+            <h2>SVD狙击步枪</h2>
+            <p>SVD狙击步枪（英文：SVD Sniper Rifle ），是苏联1963年研制列装的一型狙击步枪。
+                SVD狙击步枪口径7.62毫米、全枪重量为4.3千克，增强型组件后有所增加；全枪总长为1220毫米，最大射程为1300米，弹匣容量10发子弹。</p>
+        </div>
+    </main>
+
+
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.shell {
+    width: 100%;
+    position: relative;
+    padding: 80px 0;
+    transition: 0.3s ease 0s;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.shell:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(99, 99, 99, 0.8);
+    content: "";
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.title {
+    color: #fff;
+    font-size: 46px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.content {
+    position: relative;
+}
+
+.timeline {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 1400px;
+    position: relative;
+}
+
+
+
+.content-desc {
+    padding: 10px 0 0 0;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 25px;
+    text-indent: 2em;
+    /* 设置段落首行缩进为两个字符的宽度 */
+    position: relative;
+    /* 设置相对定位，为伪元素定位提供参照 */
+    
+}
+.center-text{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 25px;
+    font-size: 15px;
+    padding: 5px 0 0 0;
+}
+.timeline:before {
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    margin-left: -1px;
+    content: "";
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.item {
+    padding: 300px 0;
+    opacity: 0.3;
+    filter: blur(2px);
+    transition: 0.5s;
+    box-sizing: border-box;
+    width: calc(50% - 40px);
+    display: flex;
+    position: relative;
+    transform: translateY(-80px);
+    
+    
+
+}
+
+.item:before {
+    content: attr(data-text);
+    letter-spacing: 3px;
+    width: 100%;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    top: 70%;
+    margin-top: -5px;
+    padding-left: 15px;
+    opacity: 0;
+    right: calc(-100% - 100px);
+    /*距离位置*/
+    font: 900 100px '';
+    /*字体粗细 大小*/
+    letter-spacing: 5px;
+    /* 字体间距 */
+}
+
+.item:nth-child(even) {
+    align-self: flex-end;
+}
+
+.item:nth-child(even):before {
+    right: auto;
+    text-align: right;
+    left: calc(-100% - 100px);
+    padding-left: 0;
+    border-left: none;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    padding-right: 15px;
+}
+
+.item--active {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+}
+
+.item--active:before {
+    top: 50%;
+    transition: 0.3s all 0.2s;
+    opacity: 1;
+}
+
+.item--active .content-title {
+    margin: -50px 0 20px 0;
+}
+
+.img {
+    display: block;
+    /* 将图片设为块级元素 */
+    max-width: 100%;
+    height: auto;
+    /* 保持图片的原始宽高比 */
+    margin: 0 auto;
+    /* 上下保持0，左右自动，实现水平居中 */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    border: 2px solid white;
+    /* 添加白色边框 */
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin: 10px 200px;
+    font-weight: normal;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .item {
+        align-self: baseline !important;
+        width: 100%;
+        padding: 0 30px 150px 80px;
+    }
+
+    .item:before {
+        left: 10px !important;
+        padding: 0 !important;
+        top: 50px;
+        text-align: center !important;
+        width: 60px;
+        border: none !important;
+    }
+
+    .item:last-child {
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .timeline:before {
+        left: 40px;
+    }
+}
+
+#back-to-top {
+    position: fixed;
+    /* 固定位置 */
+    bottom: 20px;
+    /* 距离底部20像素 */
+    right: 30px;
+    /* 距离右边30像素 */
+    z-index: 1000;
+    /* 确保按钮在其他内容之上 */
+    padding: 10px 15px;
+    /* 内边距 */
+    font-size: 16px;
+    /* 文本大小 */
+    color: white;
+    /* 文本颜色 */
+    background-color: #c3c4c4;
+    /* 背景颜色 */
+    border: none;
+    /* 无边框 */
+    cursor: pointer;
+    /* 鼠标悬停时显示指针 */
+    border-radius: 5px;
+    /* 圆角边框 */
+    display: none;
+    /* 默认不显示，将在滚动时显示 */
+}
+
+/* 当滚动一定距离后显示按钮 */
+.show {
+    display: block;
+}
+
+#back-to-top2 {
+    position: fixed;
+    /* 固定位置 */
+    bottom: 20px;
+    /* 距离底部20像素 */
+    /* 距离右边30像素 */
+    z-index: 1000;
+    /* 确保按钮在其他内容之上 */
+    padding: 10px 15px;
+    /* 内边距 */
+    font-size: 16px;
+    /* 文本大小 */
+    color: white;
+    /* 文本颜色 */
+    background-color: #c3c4c4;
+    /* 背景颜色 */
+    border: none;
+    /* 无边框 */
+    cursor: pointer;
+    /* 鼠标悬停时显示指针 */
+    border-radius: 5px;
+    /* 圆角边框 */
+    display: none;
+    /* 默认不显示，将在滚动时显示 */
+}

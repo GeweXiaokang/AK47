@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>M16-3D演示</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="css/3d.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<style>
+    #container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url('./img/BAM2.jpeg');
+    background-size: cover;
+}
+</style>
+<body>
+    <!-- Main Container -->
+    <div id="container">
+        <!-- Navbar container -->
+        <div id="navbar">
+            <div id="logo">
+                <a href="index.html"><img src="./img/littleAK.png" alt="logo"></a>
+            </div>
+            <ul>
+                <li class="active">
+                    <a href="3dAK.html">主页</a>
+                </li>
+                <li><a href="story.html">故事</a></li>
+                <li><a href="3dM16.html">M16-3D演示</a></li>
+                <li><a href="#">暂无</a></li>
+                <li><a href="#">暂无</a></li>
+            </ul>
+        </div>
+
+        <!-- An aside -->
+        <!-- This is for holding the 3D object -->
+        <div id="aSide">
+            <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <model-viewer src="model/M16/M16.gltf" alt="M16" auto-rotate camera-controls >
+            </model-viewer>
+        </div>
+
+        <!-- Content container -->
+        <!-- This is for holding some brief description about the 3D object -->
+        <div id="content">
+            <h2>M16</h2>
+            <p>M16系列自动步枪是第二次世界大战后美国换装的第二代步枪，对以后的轻武器小型化产生了深远的影响。M16系列步枪被将近100个国家使用，被誉为当今世界六大名枪之一。</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

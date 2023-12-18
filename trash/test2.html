@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Background Image</title>
+    <style>
+        /* 整体布局样式 */
+        body {
+            display: flex;
+        }
+
+        /* 侧边栏样式 */
+        .sidebar {
+            width: 250px;
+            /* 侧边栏宽度 */
+            height: 100vh;
+            /* 侧边栏高度 */
+            background-color: #333;
+            /* 背景颜色 */
+            padding: 20px;
+            /* 内边距 */
+        }
+
+        /* 导航菜单样式 */
+        .nav-menu {
+            list-style-type: none;
+            /* 移除列表标记 */
+            padding: 0;
+            /* 移除内边距 */
+        }
+
+        /* 导航菜单项样式 */
+        .nav-menu li {
+            padding: 10px;
+            /* 菜单项内边距 */
+            margin-bottom: 5px;
+            /* 菜单项间距 */
+            background-color: #444;
+            /* 菜单项背景颜色 */
+            border-radius: 5px;
+            /* 圆角边框 */
+        }
+
+        /* 导航链接样式 */
+        .nav-menu li a {
+            text-decoration: none;
+            /* 移除下划线 */
+            color: white;
+            /* 字体颜色 */
+            display: block;
+            /* 使链接填充整个li */
+        }
+
+        /* 当鼠标悬停在菜单项上时的样式 */
+        .nav-menu li:hover {
+            background-color: #555;
+            /* 悬停时背景颜色改变 */
+        }
+
+        /* 页面内容样式 */
+        .content {
+            flex-grow: 1;
+            /* 占据剩余空间 */
+            padding: 20px;
+            /* 内边距 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 侧边导航栏容器 -->
+    <div class="sidebar">
+        <!-- 导航菜单 -->
+        <ul class="nav-menu">
+            <li><a href="index.html">主页</a></li>
+            <li><a href="news.html">新闻</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="about.html">关于我们</a></li>
+        </ul>
+    </div>
+
+    <!-- 页面的其余部分 -->
+    <div class="content">
+        <!-- 内容 -->
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+*{
+    margin: 0;/* 防止边距重叠 */
+    padding: 0; /* 防止边距重叠 */
+    box-sizing: border-box;
+    
+}
+header{
+    background-color: #363636;
+    height: 80px;
+    width: 100%;
+    position: relative;
+    /*border-bottom: 2px solid white; /* 添加白色边框 */
+}
+header .sample-a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    height: 80px;
+    width:100%;
+    padding: 5px 10px;
+    border: 2px solid white; /* 添加白色边框 */
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+header a:hover{
+    text-decoration: underline;
+    color:rgb(192, 181, 30)
+}
+header ul{
+    position: absolute;
+    right:5vw;
+    top:0;
+    line-height: 80px;
+}
+header li{
+    font-size: 20px;
+    display: inline;
+    margin-right: 2vw;
+}
+.unique-a{
+    z-index: 9999;
+}
+header img{
+    position:absolute;
+    left:120px;
+    top:50%;
+    height: 70px;
+    transform: translate(-50%, -50%); /* 使用 transform 来精确居中 */
+}
+main{
+    height: calc(100vh - 80px);
+    width: 100%;
+    position: relative;
+    background-color: antiquewhite;
+    background-image: url('../img/BAM2.jpeg');
+    background-size: cover;
+}
+#guns_3D model-viewer{
+    height: calc(100vh - 80px);
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    z-index: 0;
+}
+
+
+#guns_content {
+    width: 700px;
+    position: absolute;
+    left: 12%;
+    top: calc(60%);
+}
+
+
+/* This styles the heading in the 3D description */
+
+#guns_content h2 {
+    font-size: 90px;
+    color: white;
+    width: 80vw;
+    word-wrap: break-word;
+}
+
+
+/* This styles the paragraph in the 3D description*/
+
+#guns_content p {
+    font-size: 20px;
+    color: wheat;
+    width: 80vw;
+    word-wrap: break-word;
+}
+
+
+.sidebar {
+    width: 200px;
+    /* 侧边栏宽度 */
+    /* 侧边栏高度 */    
+    /* 背景颜色 */
+    padding: 20px;
+    /* 内边距 */
+    position: fixed; /* 固定定位 */
+    z-index: 1000; /* 确保侧边栏在其他内容之上 */
+
+}
+
+/* 导航菜单样式 */
+.nav-menu {
+    list-style-type: none;
+    /* 移除列表标记 */
+    padding: 0;
+    /* 移除内边距 */
+}
+
+/* 导航菜单项样式 */
+.nav-menu li {
+    padding: 10px;
+    /* 菜单项内边距 */
+    margin-bottom: 5px;
+    /* 菜单项间距 */
+    background-color: #444;
+    /* 菜单项背景颜色 */
+    border-radius: 5px;
+
+}
+
+/* 导航链接样式 */
+.nav-menu li a {
+    text-decoration: none;
+    /* 移除下划线 */
+    color: white;
+    /* 字体颜色 */
+    display: block;
+    /* 使链接填充整个li */
+}
+
+/* 当鼠标悬停在菜单项上时的样式 */
+.nav-menu li:hover {
+    background-color: #555;
+    /* 悬停时背景颜色改变 */
+}

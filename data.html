@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据</title>
+    <link rel="stylesheet" href="./css/guns.css">
+    <link rel="stylesheet" href="./css/data.css">
+    <script type="text/javascript"
+    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+<script type="text/javascript">
+    var viz;
+
+    function initViz() {
+        var containerDiv = document.getElementById("vizContainer"),
+            url = "https://public.tableau.com/shared/99ZF623CX?:display_count=n&:origin=viz_share_link",
+            options = {
+                hideTabs: true
+            };
+
+        viz = new tableau.Viz(containerDiv, url, options);
+    }
+
+    function vizResize() {
+        var width = document.getElementById("resizeWidth").value;
+        var height = document.getElementById("resizeHeight").value;
+
+        viz.setFrameSize(parseInt(width, 10), parseInt(height, 10));
+    }
+</script>
+</head>
+
+
+<body>
+    <header>
+        <a href="index.html" class="unique-a"><img src="./img/littleAK.png" alt="logo"></a>
+        <ul>
+            <li> <a href="3DAK.html" class="sample-a">主页</a></li>
+            <li><a href="story.html" class="sample-a">故事</a></li>
+            <li><a href="data.html" class="sample-a">数据</a></li>
+            <li><a href="#" class="sample-a">发展史</a></li>
+            <li><a href="vedio.html" class="sample-a">视频</a></li>
+        </ul>
+        </ul>
+    </header>
+    <main>
+        <body onload="initViz();">
+            <div id="vizContainer"></div>
+            
+        </body>
+    </main>
+    
+    
+    
+      
+
+</body>
+
+</html>

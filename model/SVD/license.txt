@@ -1,0 +1,11 @@
+Model Information:
+* title:	SVD (Dragunov) *Updated*
+* source:	https://sketchfab.com/3d-models/svd-dragunov-updated-d4a9412275aa4974b146ad8ce9dc5fc2
+* author:	WillyG99 (https://sketchfab.com/WillyG99)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "SVD (Dragunov) *Updated*" (https://sketchfab.com/3d-models/svd-dragunov-updated-d4a9412275aa4974b146ad8ce9dc5fc2) by WillyG99 (https://sketchfab.com/WillyG99) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

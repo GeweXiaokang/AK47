@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 下载echarts：npm install echarts --save -->
+    <!-- 引入echarts资源包 -->
+    <script src="./node_modules/echarts/dist/echarts.min.js"></script>
+</head>
+
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 500px;height:400px;"></div>
+
+    <div id="main2" style="width: 500px;height:400px;"></div>
+    <script>
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        // 指定图表的配置项和数据
+        option = {
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: [70, 932, 901, 934, 1290, 1330, 1320],
+                type: 'line',
+                areaStyle: {}
+            }]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+
+
+
+        var myChart2 = echarts.init(document.getElementById('main2'));
+        option2 = {
+            title: [
+                {
+                    text: 'Tangential Polar Bar Label Position (middle)'
+                }
+            ],
+            polar: {
+                radius: [30, '80%']
+            },
+            angleAxis: {
+                max: 4,
+                startAngle: 75
+            },
+            radiusAxis: {
+                type: 'category',
+                data: ['a', 'b', 'c', 'd']
+            },
+            tooltip: {},
+            series: {
+                type: 'bar',
+                data: [2, 1.2, 2.4, 3.6],
+                coordinateSystem: 'polar',
+                label: {
+                    show: true,
+                    position: 'middle',
+                    formatter: '{b}: {c}'
+                }
+            }
+        };
+        myChart2.setOption(option2);
+    </script>
+</body>
+
+</html>

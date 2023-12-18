@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AK47-3D演示</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="css/3d.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<style>
+      #container {
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      background-image: url('./img/BAM2.jpeg');
+      background-size: cover;
+  }
+</style>
+<body>
+    <!-- Main Container -->
+    
+    <div id="container">
+        <div id="navbar">
+            <div id="logo">
+                <a href="index.html"><img src="./img/littleAK.png" alt="logo"></a>
+            </div>
+            <ul>
+                <li class="active">
+                    <a href="3dAK.html">主页</a>
+                </li>
+                <li><a href="story.html">故事</a></li>
+                <li><a href="3dM16.html">M16-3D演示</a></li>
+                <li><a href="#">暂无</a></li>
+                <li><a href="#">暂无</a></li>
+            </ul>
+        </div>
+        <!-- An aside -->
+        <!-- This is for holding the 3D object -->
+        <div id="aSide">
+            <model-viewer src="model/AK47/AK47.gltf" alt="AK47" auto-rotate camera-controls ar>
+            </model-viewer>
+        </div>
+
+        <!-- Content container -->
+        <!-- This is for holding some brief description about the 3D object -->
+        <div id="content">
+            <h2>AK47</h2>
+            <p>AK-47自动步枪，全称卡拉什尼科夫1947年式自动步枪 （俄文：1947-год Автомат Калашникова，英文：AK-47 Assault Rifle），是苏联枪械设计师米哈伊尔·季莫费耶维奇·卡拉什尼科夫所设计的一型自动步枪。</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

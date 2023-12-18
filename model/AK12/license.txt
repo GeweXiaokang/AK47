@@ -1,0 +1,11 @@
+Model Information:
+* title:	AK12 - 3D Model Assault Rifle
+* source:	https://sketchfab.com/3d-models/ak12-3d-model-assault-rifle-d431b6b4931743a79536b1308da21c7e
+* author:	momsboxtv (https://sketchfab.com/momsboxtv)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "AK12 - 3D Model Assault Rifle" (https://sketchfab.com/3d-models/ak12-3d-model-assault-rifle-d431b6b4931743a79536b1308da21c7e) by momsboxtv (https://sketchfab.com/momsboxtv) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

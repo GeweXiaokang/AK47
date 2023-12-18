@@ -1,0 +1,11 @@
+Model Information:
+* title:	FAMAS
+* source:	https://sketchfab.com/3d-models/famas-7d35e14ad8874d148ce9cc46e5765a6b
+* author:	Frostoise (https://sketchfab.com/Frostoise)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "FAMAS" (https://sketchfab.com/3d-models/famas-7d35e14ad8874d148ce9cc46e5765a6b) by Frostoise (https://sketchfab.com/Frostoise) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

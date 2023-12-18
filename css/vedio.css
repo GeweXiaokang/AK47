@@ -1,0 +1,14 @@
+/* 使 video 标签响应式 */
+video {
+    width: 100% !important; /* 强制视频宽度为容器的 100% */
+    height: auto !important; /* 高度自动调整 */
+    display: block; /* 防止默认的行内布局 */
+    
+}
+
+/* 限制 video 容器的最大宽度（可选） */
+.container {
+    max-width: 75%; /* 或者您希望的任何最大宽度 */
+    margin: auto; /* 居中显示 */
+}
+
