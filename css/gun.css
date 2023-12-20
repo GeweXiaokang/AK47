@@ -11,7 +11,14 @@
 总的来说，fr 单位提供了一个非常强大和灵活的方式来创建动态尺寸的网格布局，它可以自适应容器的大小变化。
 */
 
+body::-webkit-scrollbar {
+    display: none; /* 对于 Safari 和 Chrome */
+}
 
+body {
+    -ms-overflow-style: none; /* 对于 IE10+ */
+    scrollbar-width: none; /* 对于 Firefox */
+}
 main {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -22,7 +29,7 @@ main {
     /* 容器高度设置为视口的100% */
     width: 100vw;
     /* 容器宽度设置为视口的100% */
-    background-color: antiquewhite;
+    background-color: rgb(168, 168, 168);
 
 }
 

@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body::-webkit-scrollbar {
+    display: none; /* 对于 Safari 和 Chrome */
+}
 
+body {
+    -ms-overflow-style: none; /* 对于 IE10+ */
+    scrollbar-width: none; /* 对于 Firefox */
+}
 *, *::before , *::after {
     margin: 0;
     padding: 0;
@@ -14,14 +21,14 @@ body {
     overflow: hidden;
 }
 
-.wrapper {
+.game-wrapper {
     width: 300%;
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
 }
 
-.logo {
+.game-logo {
     font-size: 8rem;
     position: fixed;
     z-index: 10;
@@ -68,12 +75,12 @@ section.character::before {
     transform: translateX(-100%);
 }
 
-.saitama::before, .saitama .block {
-    background-color: #ffc107;
+.chiji::before, .chiji .block {
+    background-color: #89ffbc79;
 }
 
-.genos::before, .genos .block {
-    background-color: #83cdc1;
+.csgo::before, .csgo .block {
+    background-color: #cdbf83;
 }
 
 .caption {

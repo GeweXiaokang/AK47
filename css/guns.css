@@ -4,6 +4,14 @@
     box-sizing: border-box;
     
 }
+body::-webkit-scrollbar {
+    display: none; /* 对于 Safari 和 Chrome */
+}
+
+body {
+    -ms-overflow-style: none; /* 对于 IE10+ */
+    scrollbar-width: none; /* 对于 Firefox */
+}
 header{
     background-color: #363636;
     height: 80px;

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         xPercent: -100 * (sections.length - 1),
         ease: 'none',
         scrollTrigger: {
-            trigger: '.wrapper',
+            trigger: '.game-wrapper',
             pin: true,
             scrub: 0.5,
             snap: 1 / (sections.length - 1),
@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    gsap.to('.logo', {
+    gsap.to('.game-logo', {
         fontSize: '2.5rem',
         top: '4rem',
         scrollTrigger: {
-            trigger: '.logo',
+            trigger: '.game-logo',
             start: 'top top',
             end: 1500,
             scrub: 0.5,
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 end: '+=50%',
                 scrub: 0.5,
             }
-        
+
         })
 
         gsap.to(el.querySelector('.huge-text'), {
@@ -112,10 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 scrub: 0.5,
             }
         }
-        
-        )
 
-     
+        )
 
     })
 
